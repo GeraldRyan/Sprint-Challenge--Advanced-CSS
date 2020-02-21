@@ -34,13 +34,23 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+An adaptive website uses different layouts for differetn screen sizes but it has to load all the pages. A responsive website is fluid (using percentages) and uses CSS media to change styles. 
+
 2. Describe what it means to be mobile first vs desktop first.
+
+The former means you design your site to be built for mobile users first and adapt it to desktop and other media, vs desktop in the other direction. It just determines the starting point. 
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+It sets the default font for the entire Document at 62.5 of the default, which is about 10px, the 'magic number'. Then as we go throughout the document and specify Rem units, we know each rem will increase font size in multiples of 10px. 
+
 4. How would you describe preprocessing to someone new to CSS?
 
+CSS is the basic language of styling but is not very dynamic. Preprocessing allows us to code CSS in a higher more abstract langauge that is a superset (all inclusive of the original CSS plus more features) so that we can add more features like variables and mixins and a more hierarchical arrangement of our code syntax as well. Basically it gives us more powers and makes things easier, and it 'compiles down' into the CSS that the browser needs. 
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+Everything. Honestly it is all good. Nothing gives me tons of trouble. In plain CSS I wish there was a way to get the width of an element- because I know it can change responsively- and so that getting this you can give somethign else the same width that's not a child. I tried getattr(). I don't think that's a feature yet. 
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
