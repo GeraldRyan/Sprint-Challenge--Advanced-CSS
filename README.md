@@ -34,23 +34,24 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
-An adaptive website uses different layouts for differetn screen sizes but it has to load all the pages. A responsive website is fluid (using percentages) and uses CSS media to change styles. 
+# An adaptive website does use different layouts for different screen sizes but is not fluid in that it uses fixed pixels instead of percentages with breakpoints. A responsive website is fluid (using percentages) in using CSS to change styles for given media and screen sizes. 
 
 2. Describe what it means to be mobile first vs desktop first.
 
-The former means you design your site to be built for mobile users first and adapt it to desktop and other media, vs desktop in the other direction. It just determines the starting point. 
+# The former means you design your site to be built for mobile users first and subsequently adapt it to desktop and larger media, while desktop-first goes in the other direction. It is a question of starting point or basis. 
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
-It sets the default font for the entire Document at 62.5 of the default, which is about 10px, the 'magic number'. Then as we go throughout the document and specify Rem units, we know each rem will increase font size in multiples of 10px. 
+# The typical default browser font size is 16px. Setting font size to 62.5 means you are therefore setting it to 10px. This makes math a lot easier, and you can go to 20px with 2rem and 30 pixels with 3rem and so forth. 
 
 4. How would you describe preprocessing to someone new to CSS?
 
-CSS is the basic language of styling but is not very dynamic. Preprocessing allows us to code CSS in a higher more abstract langauge that is a superset (all inclusive of the original CSS plus more features) so that we can add more features like variables and mixins and a more hierarchical arrangement of our code syntax as well. Basically it gives us more powers and makes things easier, and it 'compiles down' into the CSS that the browser needs. 
+# Whereas CSS is the basic language of html styling, it is not very dynamic. It doesn't take variables and it doesn't enable custom function-like features, which in preprocessors are called 'mixins' among other features. Preprocessing allows us to code everything in a preprocessor file the same way we would code plain CSS but also allows us to add other features like those described before, or to code things in a structured format for identifying selectors, which is not the same syntax as CSS. Then, this code compiles down to the CSS our browser needs. It's basically semantically a super set of CSS that gives the developers more flexibility, power and ease of use.
+
 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
 
-Everything. Honestly it is all good. Nothing gives me tons of trouble. In plain CSS I wish there was a way to get the width of an element- because I know it can change responsively- and so that getting this you can give somethign else the same width that's not a child. I tried getattr(). I don't think that's a feature yet. 
+# Everything. Honestly it is all good but maybe the variables, and also the tree structure like way of selecting. Nothing gives me tons of trouble but there are some more advanced things I want to learn that I don't think we went over and I just get more overal familiarity with it. Sometimes if you're getting an error with your CSS you should look at how it's compiling down and view your CSS to make sure it's coming out as you expect it should. 
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
