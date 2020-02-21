@@ -1,1 +1,14 @@
 // Mixins Here
+
+.custom-btn(@bg-color:@btn-bg-color, @fontsize:1rem, @font-color:@porcelain){
+background-color:@bg-color;
+font-size: @fontsize;
+color:@font-color;
+padding: 5px 20px;
+border-radius:1rem;
+
+&:hover{
+  background-color:@font-color;
+  color:@bg-color;
+}
+}

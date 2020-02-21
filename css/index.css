@@ -169,6 +169,8 @@ nav h1 {
   padding: 2rem;
 }
 nav .links {
+  width: 70%;
+  margin: auto;
   display: flex;
   justify-content: space-around;
   font-size: 2rem;
@@ -228,6 +230,17 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn button {
+  background-color: #22283A;
+  font-size: 2rem;
+  color: #F6F7F8;
+  padding: 5px 20px;
+  border-radius: 1rem;
+}
+.home .walk .walk-text .btn button:hover {
+  background-color: #F6F7F8;
+  color: #22283A;
 }
 .home .walk .walk-img {
   width: 46%;
