@@ -10,8 +10,7 @@ nav {
   }
 
   .links {
-    width          : 70%;
-    margin:auto;
+    .custom-width-auto(70%);
     display        : flex;
     justify-content: space-around;
     font-size      : 2rem;
@@ -24,10 +23,5 @@ nav {
   a {
     text-decoration: none;
     padding        : 0 0 1rem;
-  }
-
-  @media(@phone){
-    width:100%;
-    .mobile-container();
   }
 }
