@@ -3,7 +3,6 @@
 <html lang="en">
 
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="utf-8">
 
   <title>SpaceWalkers</title>
@@ -14,6 +13,14 @@
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
+
+
+  <!-- First tried this viewport tag (Normal)-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- But I had to use this to make this work on Chrome.  -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densityDpi=device-dpi" />
+
+
 </head>
 
 <body>
