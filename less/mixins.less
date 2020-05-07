@@ -1,1 +1,26 @@
 // Mixins Here
+
+.custom-width-auto(@width: 100%) {
+  width : @width;
+  margin: auto;
+}
+
+.flexer(@flexwrap: wrap, @flex-direction: row) {
+  display       : flex;
+  flex-wrap     : @flexwrap;
+  flex-direction: @flex-direction;
+}
+
+
+.custom-btn(@bg-color: @btn-bg-color, @fontsize: 1rem, @font-color: @porcelain) {
+  background-color: @bg-color;
+  font-size       : @fontsize;
+  color           : @font-color;
+  padding         : 5px 20px;
+  border-radius   : 1rem;
+
+  &:hover {
+    background-color: @font-color;
+    color           : @bg-color;
+  }
+}
